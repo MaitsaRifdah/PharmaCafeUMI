@@ -202,6 +202,13 @@ nav b {
   border: 2px solid var(--fg);
 }
 
+a.brand {
+  text-decoration: none !important; /* Menghilangkan garis bawah */
+  color: #fff8e7 !important;        /* Warna krem/putih */
+  font-weight: bold;                 /* Menjadikan teks tebal */
+  font-family: serif;                /* Mengubah bentuk font */
+}
+
 .cupwrap {
   position: relative;
   display: grid;
