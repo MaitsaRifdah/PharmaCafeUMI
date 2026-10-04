@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PharmaCafe</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sky"></div><div id="glow"></div>
+<nav>
+  <b>PharmaCafe</b>
+  <div class="links">
+    <a href="#/" id="nHome">Beranda</a>
+    <a href="#/menu" id="nMenu">Menu</a>
+    <div class="status" id="status"><span class="dot"></span><span id="stx"></span></div>
+  </div>
+</nav>
+
+<!-- BERANDA -->
+<div class="page" id="pHome">
+  <section class="hero">
+    <div>
+      <h1>Break dulu yuk,<br>Sini!</h1>
+      <p>Langit di belakang halaman ini berubah warna saat kamu menggulir. Pilih minuman favoritmu, lalu pesan lewat WhatsApp.</p>
+      <p><a class="btn" href="#/menu">Lihat menu</a></p>
+    </div>
+    <div class="cupwrap" id="cupwrap">
+      <svg viewBox="0 0 300 300" aria-label="Cangkir kopi beruap">
+        <g class="steam">
+            <path d="M110 90q-16-25 0-45t0-35"/>
+            <path d="M150 90q-16-25 0-45t0-35"/>
+            <path d="M190 90q-16-25 0-45t0-35"/>
+        </g>
+        <path d="M60 110h180v70a90 90 0 0 1-180 0z" fill="#fff6ec"/>
+        <path id="liquid" d="M68 118h164v62a82 82 0 0 1-164 0z" fill="#6b3a1f"/>
+        <path d="M240 130h18a32 32 0 0 1 0 64h-26" fill="none" stroke="#fff6ec" stroke-width="14" stroke-linecap="round"/>
+        <ellipse cx="150" cy="282" rx="110" ry="10" fill="rgba(0,0,0,.3)"/>
+      </svg>
+    </div>
+  </section>
+
+  <div class="marquee"><div id="mq"></div></div>
+
+  <section>
+    <h2>Hari ini kamu merasa apa?</h2>
+    <div class="moods" id="moods" role="group" aria-label="Pilih suasana hati"></div>
+    <div class="result" id="result"><div><h3>Pilih satu suasana</h3><p>Kami carikan minuman yang cocok untukmu.</p></div></div>
+  </section>
+
+  <section>
+    <h2>Angka dari dapur kami</h2>
+    <div class="stats">
+      <div><b data-n="48000">0</b>cangkir per tahun</div>
+      <div><b data-n="12">0</b>biji kopi nusantara</div>
+      <div><b data-n="6">0</b>jam golden hour</div>
+    </div>
+  </section>
+</div>
+
+<!-- MENU -->
+<div class="page" id="pMenu">
+  <section style="padding-top:120px">
+    <h2>Menu</h2>
+    <div class="tools"><span id="cats" style="display:contents"></span><input type="search" id="q" placeholder="Cari menu…" aria-label="Cari menu"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+
+<section class="location-section">
+    <h2>Kunjungi Kami</h2>
+    <p>Laboratorium Fakultas Farmasi UMI</p>
+    <a 
+      href="https://maps.app.goo.gl/pBhD7YMhaokLme4Z9" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="btn"
+    >
+      📍 Buka di Google Maps
+    </a>
+  </section>
+
+<footer>Buka hari Senin-Jumat  08.00 – 17.00. Pesanan dikirim lewat WhatsApp.</footer>
+<button class="btn" id="cartbtn">Pesanan (<span id="cnt">0</span>)</button>
+<aside id="drawer" aria-label="Keranjang pesanan">
+  <div class="row"><h3>Pesananmu</h3><button class="add" id="close" aria-label="Tutup">×</button></div>
+  <div id="lines"></div>
+  <div class="row" style="margin:16px 0"><b>Total</b><b id="tot">Rp0</b></div>
+  <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Pesan via WhatsApp</a>
+</aside>
+
+<script src="menu.js"></script>
+</body>
+</html>
