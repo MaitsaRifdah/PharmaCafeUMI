@@ -505,3 +505,33 @@ footer {
     transition: none !important;
   }
 }
+
+.gacha-container {
+  max-width: 500px;
+  margin: 24px auto 0 auto;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.hasil-box {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(224, 122, 95, 0.15); /* Warna var(--gold) transparan */
+  border: 1px solid var(--gold);
+  transition: opacity 0.3s ease;
+}
+
+.hasil-box h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.sembunyi {
+  display: none;
+}

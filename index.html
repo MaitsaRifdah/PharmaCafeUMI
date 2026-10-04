@@ -23,7 +23,7 @@
 <div class="page" id="pHome">
   <section class="hero">
     <div>
-      <h1>Capek ,<br>break dulu yuk</h1>
+      <h1>Selesai praktikum?<br>ngopi yuk!</h1>
       <p>Pilih minuman favoritmu, lalu pesan lewat WhatsApp.</p>
       <p><a class="btn" href="#/menu">Lihat menu</a></p>
     </div>
@@ -68,7 +68,24 @@
     <div class="grid" id="grid"></div>
   </section>
 </div>
+    <div id="gacha-section" style="margin-top: 20px;">
+      <center><h2>Bingung Pilih Minuman?</h2>
+      <p>Biar sistem kami yang menentukan takdir minumanmu hari ini.</p></center>
+      
+      <div class="gacha-container">
+        <button id="btn-gacha" class="btn">Acak Menu Sekarang</button>
+        
+        <div id="hasil-gacha" class="hasil-box sembunyi">
+          <h3 id="nama-menu">???</h3>
+          <p id="deskripsi-menu"></p>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+    </div>
 
+  </section>
+</div>
 <section class="location-section">
     <h2>Kunjungi Kami</h2>
     <p>Laboratorium Fakultas Farmasi UMI</p>
@@ -83,13 +100,7 @@
   </section>
 
 <footer>Buka hari Senin-Jumat  08.00 – 17.00. Pesanan dikirim lewat WhatsApp.</footer>
-<button class="btn" id="cartbtn">Pesanan (<span id="cnt">0</span>)</button>
-<aside id="drawer" aria-label="Keranjang pesanan">
-  <div class="row"><h3>Pesananmu</h3><button class="add" id="close" aria-label="Tutup">×</button></div>
-  <div id="lines"></div>
-  <div class="row" style="margin:16px 0"><b>Total</b><b id="tot">Rp0</b></div>
-  <a class="btn" id="wa" href="#" target="_blank" rel="noopener">Pesan via WhatsApp</a>
-</aside>
+
 
 <script src="menu.js"></script>
 </body>
