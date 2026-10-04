@@ -1,50 +1,48 @@
 const MENU = [
-  { id: 1, n: "Labo Coffee", k: "Coffe Milk", img: "images/farmacafe.jpeg", p: 20000, d: "Perpaduan antara  ." },
-  { id: 2, n: "Palm Coffee", k: "Coffe Milk", img: "images/palm.jpeg", p: 20000, d: "Dua shot, susu mikro-foam halus." },
-  { id: 3, n: "Latte", k: "Coffe Milk", img: "images/latte.jpeg", p: 20000, d: "Espresso lembut dengan susu segar." },
-  { id: 4, n: "Vanilla Latte", k: "Coffe Milk", img: "images/vanilla,latte.jpeg", p: 20000, d: "Espresso, sirup vanilla premium, dan susu." },
-  { id: 5, n: "Moccacino", k: "Coffe Milk", img: "images/moccachino.jpeg", p: 23000, d: "Perpaduan cokelat pekat dan espresso." },
-  { id: 6, n: "Signature A", k: "Coffe Milk", img: "images/roti-bakar.jpg", p: 23000, d: "Espresso spesial dengan sentuhan krim." },
-  { id: 7, n: "Signature B", k: "Coffe Milk", img: "images/pisang-goreng.jpg", p: 23000, d: "Racikan susu manis dan espresso gurih." },
-  { id: 8, n: "Signature C", k: "Coffe Milk", img: "images/kopi-toraja.jpg", p: 23000, d: "Kopi racikan khas dengan aromatik spesial." },
-  { id: 8, n: "Butterscotch", k: "Coffe Milk", img: "images/butterscotch.jpeg", p: 23000, d: "Kopi racikan khas dengan aromatik spesial."},
-  { id: 9, n: "Americano", k: "Black Series", img: "images/americano.jpeg", p: 10000, d: "Double shot espresso dengan air murni." },
-  { id: 10, n: "Berrycano", k: "Black Series", img: "images/berrycano.jpeg", p: 15000, d: "Espresso dingin dipadu sirup berry segar." },
-  { id: 11, n: "Tropicano", k: "Black Series", img: "images/kopi-toraja.jpg", p: 15000, d: "Kopi hitam dingin dengan sensasi buah tropis." },
-  { id: 12, n: "Silverqueen", k: "Addtional", img: "images/silverqueen.jpeg", p: 7000, d: "Matcha Jepang autentik dipadu susu segar." },
-  { id: 13, n: "Oat Milk", k: "Addtional", img: "images/oat.jpeg", p: 5000, d: "Teh hitam aromatik dengan ekstrak bergamot." },
-  { id: 14, n: "Chocolate", k: "Milk Series", img: "images/chocolate.jpeg", p: 18000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 15, n: "Brown Sugar Milk", k: "Milk Series", img: "images/brown-sugar.jpeg", p: 18000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 16, n: "Korean Strawberry", k: "Milk Series", img: "images/korean-straw.jpeg", p: 20000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 17, n: "Mango Milk", k: "Milk Series", img: "images/mango-milk.jpeg", p: 20000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 18, n: "Lemon Tea", k: "Tea Series", img: "images/lemon-tea.jpeg", p: 15000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 19, n: "Thai Tea", k: "Tea Series", img: "images/thati-tea.jpeg", p: 15000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 20, n: "Green Tea", k: "Tea Series", img: "images/greentea.jpeg", p: 15000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 21, n: "Matcha Latte", k: "Matcha Series", img: "images/matcha-latte.jpeg", p: 25000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 22, n: "Matcha Strawberry", k: "Matcha Series", img: "images/matcha-straw.jpeg", p: 30000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 23, n: "Putu Belanda", k: "Dessert", img: "images/putu-belanda.jpeg", p: 20000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 24, n: "Cheesekuit", k: "Dessert", img: "images/cheesekuit.jpeg", p: 13000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 25, n: "Pudding", k: "Dessert", img: "images/pudding.jpeg", p: 13000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 26, n: "Cookies", k: "Dessert", img: "images/cookies.jpeg", p: 13000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 27, n: "Risol Coklat", k: "Dessert", img: "images/risol-coklat.jpeg", p: 8000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 28, n: "Risol Mayo", k: "Dessert", img: "images/risol-mayo.jpeg", p: 6000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 29, n: "Donat", k: "Dessert", img: "images/donat.jpeg", p: 5000, d: "Cokelat kental manis dipadu susu murni." },
-  { id: 30, n: "Roti", k: "Dessert", img: "images/roti.jpeg", p: 6000, d: "Cokelat kental manis dipadu susu murni." }
+  { id: 1, n: "Labo Coffee", k: "Coffe Milk", img: "images/labo.jpeg", p: 20000, d: "Kopi susu klasik" },
+  { id: 2, n: "Palm Coffee", k: "Coffe Milk", img: "images/palm.jpeg", p: 20000, d: "Kopi susu dengan manis legitnya gula aren khas Nusantara." },
+  { id: 3, n: "Latte", k: "Coffe Milk", img: "images/latte.jpeg", p: 20000, d: "Paduan espresso lembut dengan steamed susu segar." },
+  { id: 4, n: "Vanilla Latte", k: "Coffe Milk", img: "images/vanilla,latte.jpeg", p: 20000, d: "Espresso berpadu dengan sirup vanilla premium dan susu creamy." },
+  { id: 5, n: "Moccacino", k: "Coffe Milk", img: "images/moccachino.jpeg", p: 23000, d: "Kombinasi seimbang antara cokelat pekat, espresso, dan susu hangat." },
+  { id: 6, n: "Signature A", k: "Coffe Milk", img: "images/singnature-A.jpeg", p: 23000, d: "Perpaduan kopi dan kurma asli dengan rasa unik." },
+  { id: 7, n: "Signature B", k: "Coffe Milk", img: "images/singnature-B.jpeg", p: 23000, d: "Kopi susu dengan sentuhan kesegaran rasa strawberry yang bikin nagih." },
+  { id: 8, n: "Signature C", k: "Coffe Milk", img: "images/singnature-C.jpeg", p: 23000, d: "Kopi susu berpadu dengan manis dan gurihnya sirup karamel." },
+  { id: 9, n: "Butterscotch", k: "Coffe Milk", img: "images/butterscotch.jpeg", p: 23000, d: "Kopi susu creamy dengan sirup butterscotch yang manis dan aromatik." },
+  { id: 10, n: "Americano", k: "Black Series", img: "images/americano.jpeg", p: 10000, d: "Double shot espresso murni dengan air, pas untuk fokus maksimal." },
+  { id: 11, n: "Berrycano", k: "Black Series", img: "images/berrycano.jpeg", p: 15000, d: "Sensasi espresso dingin berpadu dengan kesegaran jus cranberry." },
+  { id: 12, n: "Tropicano", k: "Black Series", img: "images/tropicano.png", p: 15000, d: "Kopi hitam dingin dengan ekstrak buah jeruk yang menyegarkan." },
+  { id: 13, n: "Chocolate", k: "Milk Series", img: "images/chocolate.jpeg", p: 18000, d: "Minuman cokelat kental lembut berpadu dengan susu murni." },
+  { id: 14, n: "Brown Sugar Milk", k: "Milk Series", img: "images/brown-sugar.jpeg", p: 18000, d: "Susu segar dengan lumeran sirup gula aren yang manis legit." },
+  { id: 15, n: "Korean Strawberry", k: "Milk Series", img: "images/korean-straw.jpeg", p: 20000, d: "Susu segar dengan potongan buah strawberry asli ala Korea." },
+  { id: 16, n: "Mango Milk", k: "Milk Series", img: "images/mango-milk.jpeg", p: 20000, d: "Susu creamy dengan ekstrak buah mangga manis yang menyegarkan." },
+  { id: 17, n: "Lemon Tea", k: "Tea Series", img: "images/lemon-tea.jpeg", p: 15000, d: "Teh hitam seduh dengan perasan lemon segar yang melegakan tenggorokan." },
+  { id: 18, n: "Thai Tea", k: "Tea Series", img: "images/thati-tea.jpeg", p: 15000, d: "Teh asli Thailand dengan paduan susu kental manis yang autentik." },
+  { id: 19, n: "Green Tea", k: "Tea Series", img: "images/greentea.jpeg", p: 15000, d: "Seduhan teh hijau melati yang menenangkan dan harum." },
+  { id: 20, n: "Matcha Latte", k: "Matcha Series", img: "images/matcha-latte.jpeg", p: 25000, d: "Bubuk matcha Jepang autentik diseduh dengan susu segar yang creamy." },
+  { id: 21, n: "Matcha Strawberry", k: "Matcha Series", img: "images/matcha-straw.jpeg", p: 30000, d: "Kombinasi unik pahitnya matcha dan manis asamnya selai strawberry." },
+  { id: 22, n: "Silverqueen", k: "Addtional", img: "images/silverqueen.jpeg", p: 7000, d: "" },
+  { id: 23, n: "Oat Milk", k: "Addtional", img: "images/oat.jpeg", p: 5000, d: "" },{ id: 23, n: "Putu Belanda", k: "Dessert", img: "images/putu-belanda.jpeg", p: 20000, d: "" },
+  { id: 24, n: "Cheesekuit", k: "Dessert", img: "images/cheesekuit.jpeg", p: 13000, d: "" },
+  { id: 25, n: "Pudding", k: "Dessert", img: "images/pudding.jpeg", p: 13000, d: "" },
+  { id: 26, n: "Cookies", k: "Dessert", img: "images/cookies.jpeg", p: 13000, d: "" },
+  { id: 27, n: "Risol Coklat", k: "Dessert", img: "images/risol-coklat.jpeg", p: 8000, d: "" },
+  { id: 28, n: "Risol Mayo", k: "Dessert", img: "images/risol-mayo.jpeg", p: 6000, d: "" },
+  { id: 29, n: "Donat", k: "Dessert", img: "images/donat.jpeg", p: 5000, d: "" },
+  { id: 30, n: "Roti", k: "Dessert", img: "images/roti.jpeg", p: 6000, d: "" }
 ];
 
 const MOODS = [
-  { k: "Butuh semangat", m: 1, t: "Kopi dua shot untuk memulai hari." },
-  { k: "Ingin santai", m: 8, t: "Segar dan ringan, cocok untuk ngobrol." },
-  { k: "Lagi kerja keras", m: 9, t: "Manis dan kuat, tahan sampai sore." },
-  { k: "Hati melankolis", m: 3, t: "Pekat dan hangat, teman malam yang baik." },
-  { k: "Mau coba hal baru", m: 22, t: "Manis, lembut, hangat dalam satu gelas." }
+  { k: "Butuh semangat", m:14, t: "Manis kayak senyum dia." },
+  { k: "Ingin santai", m: 4, t: "Segar dan ringan, cocok untuk ngobrol." },
+  { k: "Lagi kerja keras", m: 10, t: "Pahit kayak kehidupan." },
+  { k: "Mau coba hal baru", m: 11, t: "Manis, lembut, hangat dalam satu gelas." },
+  { k: "Diluar panas?", m: 12, t: "Segar pake BANGET!" }
 ];
 
 const rp = n => "Rp" + n.toLocaleString("id-ID");
 const $ = s => document.querySelector(s);
 let cat = "Semua";
 
-/* router #/ dan #/menu */
 function route() {
   const m = location.hash === "#/menu";
   $("#pHome").classList.toggle("show", !m);
@@ -56,24 +54,6 @@ function route() {
 }
 addEventListener("hashchange", route);
 
-/* langit berubah mengikuti scroll */
-const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
-const SK = [[[36, 59, 107], [244, 162, 97]], [[107, 58, 110], [255, 200, 87]], [[42, 27, 61], [190, 70, 90]]];
-
-function sky() {
-  const h = document.documentElement.scrollHeight - innerHeight,
-    p = h > 0 ? scrollY / h : 0,
-    i = p < .5 ? 0 : 1,
-    t = p < .5 ? p * 2 : (p - .5) * 2;
-  const a = mix(SK[i][0], SK[i + 1][0], t),
-    b = mix(SK[i][1], SK[i + 1][1], t),
-    r = document.documentElement.style;
-  r.setProperty("--s1", `rgb(${a})`);
-  r.setProperty("--s2", `rgb(${b})`);
-}
-addEventListener("scroll", sky, { passive: true });
-
-/* cahaya kursor + biji kopi parallax */
 addEventListener("pointermove", e => {
   const g = $("#glow");
   g.style.left = e.clientX + "px";
@@ -92,7 +72,6 @@ addEventListener("pointermove", e => {
   $("#cupwrap").appendChild(b);
 });
 
-/* marquee & status */
 $("#mq").innerHTML = (["Labo Coffee", "Palm Coffee", "Latte", "Vanilla Latte", "Americano"].map(w => w + " &nbsp;✦&nbsp; ").join("")).repeat(4);
 (function () {
   const h = new Date().getHours(), o = h >= 8 && h < 17;
@@ -100,7 +79,6 @@ $("#mq").innerHTML = (["Labo Coffee", "Palm Coffee", "Latte", "Vanilla Latte", "
   $("#stx").textContent = o ? "Buka sampai 17.00" : "Tutup, buka 08.00";
 })();
 
-/* pemilih mood (Tombol tambah ke pesanan dihapus) */
 const res = $("#result");
 MOODS.forEach(m => {
   const b = document.createElement("button");
@@ -127,7 +105,6 @@ MOODS.forEach(m => {
   $("#moods").appendChild(b);
 });
 
-/* halaman menu: filter, cari, tilt 3D (Tombol + dihapus) */
 function cats() {
   const el = $("#cats");
   el.innerHTML = "";
@@ -168,7 +145,6 @@ function grid() {
 }
 $("#q").oninput = grid;
 
-/* hitung angka saat terlihat */
 const io = new IntersectionObserver(es => es.forEach(e => {
   if (!e.isIntersecting) return;
   io.unobserve(e.target);
@@ -185,37 +161,30 @@ cats();
 grid();
 route();
 
-// Daftar menu dan deskripsi lucu/relatable (Fitur Gacha)
-const daftarMenu = [
-  { nama: "Kopi Susu Gula Aren", desc: "Manisnya pas, cocok buat nemenin ngerjain laporan." },
-  { nama: "Americano Dingin", desc: "Pahit dan dingin. Pas buat bikin melek seharian!" },
-  { nama: "Matcha Latte", desc: "Biar pikiran rileks sebelum masuk kelas praktikum." },
-  { nama: "Thai Tea", desc: "Segar maksimal buat cuaca panas terik hari ini." },
-  { nama: "Cokelat Panas", desc: "Bikin mood naik lagi setelah di-acc dosen." }
-];
+function jalankanGacha() {
+  const daftarGacha = [
+    { nama: "Brown Sugar Milk", desc: "Manisnya pas, cocok buat nemenin ngerjain laporan." },
+    { nama: "Americano Dingin", desc: "Pahit dan dingin. Pas buat bikin melek seharian!" },
+    { nama: "Matcha Latte", desc: "Biar pikiran rileks sebelum masuk kelas praktikum." },
+    { nama: "Berrycano", desc: "Segar maksimal buat cuaca panas terik hari ini." },
+    { nama: "Butterscotch", desc: "Bikin mood naik lagi setelah di-acc dosen." }
+  ];
 
-const btnGacha = document.getElementById('btn-gacha');
-const hasilBox = document.getElementById('hasil-gacha');
-const namaMenu = document.getElementById('nama-menu');
-const deskripsiMenu = document.getElementById('deskripsi-menu');
+  const btnGacha = document.getElementById('btn-gacha');
+  const hasilBox = document.getElementById('hasil-gacha');
+  const namaMenu = document.getElementById('nama-menu');
+  const deskripsiMenu = document.getElementById('deskripsi-menu');
 
-// Logika Gacha Menu
-if (btnGacha) {
-  btnGacha.addEventListener('click', () => {
-    // Tampilkan animasi teks loading sejenak
-    hasilBox.classList.remove('sembunyi');
-    namaMenu.innerText = "Mengacak...";
-    deskripsiMenu.innerText = "";
-    
-    // Memberikan jeda 2 detik (2000 ms) sebelum memunculkan hasil
-    setTimeout(() => {
-      // Logika memilih indeks acak dari panjang array
-      const indeksAcak = Math.floor(Math.random() * daftarMenu.length);
-      const menuTerpilih = daftarMenu[indeksAcak];
-      
-      // Tampilkan data ke HTML
-      namaMenu.innerText = menuTerpilih.nama;
-      deskripsiMenu.innerText = menuTerpilih.desc;
-    }, 2000); 
-  });
+  btnGacha.innerText = "Hmm apa yah?...";
+  hasilBox.classList.remove('sembunyi');
+  namaMenu.innerText = "Tunggu sebentar...";
+  deskripsiMenu.innerText = "";
+  
+  setTimeout(() => {
+    const indeksAcak = Math.floor(Math.random() * daftarGacha.length);
+    const menuTerpilih = daftarGacha[indeksAcak];
+    namaMenu.innerText = menuTerpilih.nama;
+    deskripsiMenu.innerText = menuTerpilih.desc;
+    btnGacha.innerText = "Kurang puas?";
+  }, 2000); 
 }

@@ -6,6 +6,7 @@
 <title>PharmaCafe</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 </head>
 <body>
 <div id="sky"></div><div id="glow"></div>
@@ -19,7 +20,6 @@
   </div>
 </nav>
 
-<!-- BERANDA -->
 <div class="page" id="pHome">
   <section class="hero">
     <div>
@@ -53,27 +53,30 @@
   <section>
     <h2>Angka dari dapur kami</h2>
     <div class="stats">
-      <div><b data-n="48000">0</b>cangkir per tahun</div>
-      <div><b data-n="12">0</b>biji kopi nusantara</div>
-      <div><b data-n="6">0</b>jam golden hour</div>
+      <div><b data-n="500">0</b>laporan lab terselesaikan</div>
+      <div><b data-n="12">0</b>jam melek ngerjain tugas</div>
+      <div><b data-n="30">0</b>varian menu pelepas penat</div>
     </div>
   </section>
 </div>
 
-<!-- MENU -->
 <div class="page" id="pMenu">
   <section style="padding-top:120px">
     <h2>Menu</h2>
-    <div class="tools"><span id="cats" style="display:contents"></span><input type="search" id="q" placeholder="Cari menu…" aria-label="Cari menu"></div>
+    <div class="tools">
+      <span id="cats" style="display:contents"></span>
+      <input type="search" id="q" placeholder="Cari menu…" aria-label="Cari menu">
+    </div>
     <div class="grid" id="grid"></div>
-  </section>
-</div>
-    <div id="gacha-section" style="margin-top: 20px;">
-      <center><h2>Bingung Pilih Minuman?</h2>
-      <p>Biar sistem kami yang menentukan takdir minumanmu hari ini.</p></center>
+    
+    <div id="gacha-section" style="margin-top: 80px; margin-bottom: 20px;">
+      <center>
+        <h2>Bingung Pilih Minuman?</h2>
+        <p>Biar sistem kami yang menentukan takdir minumanmu hari ini.</p>
+      </center>
       
       <div class="gacha-container">
-        <button id="btn-gacha" class="btn">Acak Menu Sekarang</button>
+        <button id="btn-gacha" class="btn" onclick="jalankanGacha()">Acak Menu Sekarang</button>
         
         <div id="hasil-gacha" class="hasil-box sembunyi">
           <h3 id="nama-menu">???</h3>
@@ -81,11 +84,8 @@
         </div>
       </div>
     </div>
-    <div class="grid">
-    </div>
-
-  </section>
-</div>
+  </section> 
+</div> 
 <section class="location-section">
     <h2>Kunjungi Kami</h2>
     <p>Laboratorium Fakultas Farmasi UMI</p>
@@ -99,9 +99,9 @@
     </a>
   </section>
 
-<footer>Buka hari Senin-Jumat  08.00 – 17.00. Pesanan dikirim lewat WhatsApp.</footer>
+<footer>Buka hari Senin-Jumat  08.00 – 17.30. </footer>
 
 
-<script src="menu.js"></script>
+<script src="menu.js?v=2"></script>
 </body>
 </html>

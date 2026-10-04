@@ -33,7 +33,6 @@ body {
   position: fixed;
   inset: 0;
   z-index: -2;
-  /* Adjust overlay transparan agar foto kafe terlihat jelas dan teks tetap terbaca */
   background: linear-gradient(180deg, rgba(20, 10, 8, 0.45) 0%, rgba(20, 10, 8, 0.7) 100%), 
               url('images/farmacafe.jpeg') center/cover no-repeat;
 }
@@ -47,7 +46,7 @@ body {
   top: 0;
   z-index: -1;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 200, 87, .22), transparent 65%);
+  background: radial-gradient(circle, rgb(62, 43, 5), transparent 65%);
   transform: translate(-50%, -50%);
 }
 
@@ -203,10 +202,10 @@ nav b {
 }
 
 a.brand {
-  text-decoration: none !important; /* Menghilangkan garis bawah */
-  color: #fff8e7 !important;        /* Warna krem/putih */
-  font-weight: bold;                 /* Menjadikan teks tebal */
-  font-family: serif;                /* Mengubah bentuk font */
+  text-decoration: none !important; 
+  color: #fff8e7 !important;        
+  font-weight: bold;                
+  font-family: serif;                
 }
 
 .cupwrap {
@@ -521,7 +520,7 @@ footer {
   margin-top: 20px;
   padding: 16px;
   border-radius: 16px;
-  background: rgba(224, 122, 95, 0.15); /* Warna var(--gold) transparan */
+  background: rgba(224, 122, 95, 0.15); 
   border: 1px solid var(--gold);
   transition: opacity 0.3s ease;
 }
